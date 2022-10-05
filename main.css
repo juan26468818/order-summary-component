@@ -18,6 +18,9 @@ body{
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    background-image: url("./img/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 main{
     display: flex;
@@ -85,4 +88,9 @@ button:hover{
 }
 .cancel-order:hover{
     color: var(--Dark-blue);
+}
+@media (max-width: 600px){
+    body{
+        background-image: url("./img/pattern-background-mobile.svg");
+    }
 }
