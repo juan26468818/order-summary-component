@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Summary Component</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+    <link rel="stylesheet" href="./main.css">
+
+    <!--Font Family Red Hat Display imported from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <img src="./img/illustration-hero.svg">
+        <img src="./img/illustration-hero.svg" aria-hidden="true" class="illustration-hero">
         <h1>Order Summary</h1>
         <p>
             You can now listen to millions of songs, audiobooks, and podcasts on any devices anywhere you like!
         </p>
-        <section>
+        <section class="price-container">
             <img src="./img/icon-music.svg">
-            <div>
-                <p>Annual Plan</p>
+            <div class="plan-container">
+                <p class="plan-type">Annual Plan</p>
                 <p>$59.99/year</p>
             </div>
-            <a href="#">Change</a>
+            <a href="#" class="change-plan">Change</a>
         </section>
         <button>
             Proceed to Payment
         </button>
-
-        <a href="#">Cancel Order</a>
+        <a href="#" class="cancel-order">Cancel Order</a>
     </main>
 </body>
 </html>
